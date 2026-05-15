@@ -162,10 +162,51 @@ CV MODAL STYLES
    }
 
    .cv-modal-header {
-      padding: 15px 20px;
+      padding: 12px 15px;
    }
 
    .cv-modal-header h2 {
       font-size: 16px;
+   }
+
+   .cv-header-controls {
+      gap: 5px;
+   }
+
+   .cv-maximize,
+   .cv-close {
+      font-size: 24px;
+      width: 36px;
+      height: 36px;
+   }
+
+   .cv-modal-body {
+      padding: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .cv-modal-content {
+      width: 98%;
+      height: 95vh;
+   }
+
+   .cv-modal-header {
+      padding: 10px 12px;
+   }
+
+   .cv-modal-header h2 {
+      font-size: 14px;
+   }
+
+   .cv-maximize,
+   .cv-close {
+      font-size: 20px;
+      width: 32px;
+      height: 32px;
+   }
+
+   .cv-modal-body {
+      padding: 10px;
    }
 }
