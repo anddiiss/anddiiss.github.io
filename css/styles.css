@@ -97,7 +97,7 @@ b.light-color{ color: #444; }
 .main-area .desc{ margin: 25px auto; max-width: 750px; }
 	
 .main-area .notify-btn{ padding: 13px 33px; border-radius: 50px; border: 2px solid rgba(18, 14, 240);
-	color: #fff; background: rgba(18, 14, 240, 0.5); }
+	color: #fff; background: rgba(18, 14, 240, 0.5); font-size: 1em; line-height: 1.2; font-weight: 500; }
 
 .main-area .notify-btn:hover{ background: rgba(18, 14, 240, 0.85); border: 2px solid #fff }
 
