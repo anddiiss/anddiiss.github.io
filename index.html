@@ -10,6 +10,7 @@
       <link href="css/ionicons.css" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
       <link href="css/responsive.css" rel="stylesheet">
+      <link href="css/cv-modal.css" rel="stylesheet">
    </head>
    <body>
       <div class="main-area center-text">
@@ -17,7 +18,7 @@
             <div class="display-table-cell">
                <h1 class="title font-white"><b>Andis Šemelis</b></h1>
                <p class="desc font-white">Oracle Database Developer with 10+ years of experience designing, developing, and maintaining reliable business applications using PL/SQL, Oracle Forms, and Oracle Reports.</p>
-               <a class="notify-btn" href="docs/CV.pdf"><b>View CV</b></a>&nbsp;
+               <button class="notify-btn" id="viewCvBtn" onclick="openCVModal()"><b>View CV</b></button>&nbsp;
                <a class="notify-btn" href="mailto:andis@semelis.lv"><b>Contact Me</b></a>
                <ul class="social-btn font-white">
                   <li><a href="https://www.linkedin.com/in/andissemelis/">LinkedIn</a></li>
@@ -25,5 +26,23 @@
             </div>
          </div>
       </div>
+
+      <!-- CV Modal -->
+      <div id="cvModal" class="cv-modal">
+         <div class="cv-modal-content">
+            <div class="cv-modal-header">
+               <h2>CV</h2>
+               <div class="cv-header-controls">
+                  <span class="cv-maximize" title="Maximize">⛶</span>
+                  <span class="cv-close">&times;</span>
+               </div>
+            </div>
+            <div class="cv-modal-body">
+               <iframe src="docs/CV.pdf#zoom=75"></iframe>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/cv-modal.js"></script>
    </body>
 </html>
