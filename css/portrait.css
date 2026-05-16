@@ -1,0 +1,38 @@
+/* ---------------------------------
+PORTRAIT STYLES
+--------------------------------- */
+
+.portrait-container {
+   margin-bottom: 20px;
+}
+
+.portrait {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 4px solid rgba(255, 255, 255, 0.9);
+   display: inline-block;
+}
+
+@media (max-width: 767px) {
+   .portrait {
+      width: 120px;
+      height: 120px;
+   }
+
+   .portrait-container {
+      margin-bottom: 15px;
+   }
+}
+
+@media (max-width: 479px) {
+   .portrait {
+      width: 100px;
+      height: 100px;
+   }
+
+   .portrait-container {
+      margin-bottom: 12px;
+   }
+}
